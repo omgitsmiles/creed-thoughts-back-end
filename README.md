@@ -9,7 +9,7 @@
 - Sinatra, ActiveRecord on backend
 
 ## Frontend
-[Repo to frontend](https://github.com/omgitsmiles/creed-thoughts-back-end)
+[Repo to frontend](https://github.com/omgitsmiles/creed-thoughts-front-end)
 
 ### Get started
 
