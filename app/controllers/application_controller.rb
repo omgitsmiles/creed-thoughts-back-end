@@ -11,8 +11,8 @@ class ApplicationController < Sinatra::Base
     user.to_json(include: :posts)
   end
   
-  post "/posts/:id" do
-    post = User.find(params[:id]).posts.create(message: params[:message])
+  post "/posts" do
+    post = User.find_or_create_by(username: params[:username]).posts.create(message: params[:message])
     post.to_json(include: :user)
   end
 
