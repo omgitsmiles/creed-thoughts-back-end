@@ -12,10 +12,11 @@ class ApplicationController < Sinatra::Base
   end
   
   post "/posts" do
-    post = User.find_or_create_by(username: params[:username]).posts.create(message: params[:message])
+    user = User.find_by(username: params[:username])
+    post = user.posts.create(message: params[:message])
     post.to_json(include: :user)
   end
-  # create for user
+  #find_or_create_by(username: params[:username])
 
   post "/users" do
     user = User.create(username: params[:username])
@@ -35,4 +36,3 @@ class ApplicationController < Sinatra::Base
 
 end
 
-# method inside 

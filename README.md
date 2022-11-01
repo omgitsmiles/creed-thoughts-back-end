@@ -15,6 +15,8 @@
 
 - Clone back & [frontend](https://github.com/omgitsmiles/creed-thoughts-front-end)
 - Run Bundle install in terminal
+- Run rake db:migrate
+- Run rake db:seed
 - Run rake server to start backend server
 - Run npm install seperate terminal for frontend
 - Run npm start to start frontend server
